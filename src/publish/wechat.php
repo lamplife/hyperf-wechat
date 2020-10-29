@@ -41,4 +41,12 @@ return [
     */
     'aes_key' => env('WECHAT_AES_KEY', 'aq1dDkAVBAZD2L5rs3QaKeoWa62wLumjqCXG9Hia9oM'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | url
+    |--------------------------------------------------------------------------
+    |
+    */
+    'url' => env('WECHAT_URL', 'https://api.weixin.qq.com/'),
+
 ];
