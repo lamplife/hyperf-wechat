@@ -1,0 +1,47 @@
+{
+    "name": "firstphp/hyperf-wechat",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "狂奔的蚂蚁",
+            "email": "firstphp@firstphp.com"
+        }
+    ],
+    "keywords": [
+        "微信公众号",
+        "微信公众号开发组件",
+        "公众号API",
+        "微信开发组件",
+        "hyperf"
+    ],
+    "description": "微信公众号开发组件 for hyperf",
+    "autoload": {
+        "psr-4": {
+            "Firstphp\\HyperfWechat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "ext-swoole": ">=4.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit -c phpunit.xml --colors=always",
+        "analyze": "phpstan analyse --memory-limit 300M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Firstphp\\HyperfWechat\\ConfigProvider"
+        }
+    }
+}
