@@ -2,7 +2,7 @@
     "name": "firstphp/hyperf-wechat",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "狂奔的蚂蚁",
