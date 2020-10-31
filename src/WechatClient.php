@@ -68,10 +68,12 @@ class WechatClient implements WechatInterface
     public function __construct(array $config = [], ContainerInterface $container, ClientFactory $clientFactory)
     {
         $config = $config ? $config : config('wechat');
+
         if ($config) {
             $this->url = $config['url'];
-            $this->appid = $config['appid'];
-            $this->appsecret = $config['appsecret'];
+            $this->appId = $config['appid'];
+            $this->token = $config['token'];
+            $this->appSecret = $config['appsecret'];
             $this->encodingAesKey = $config['encoding_aes_key'];
         }
         $this->http = $container->make(Http::class, compact('config'));
